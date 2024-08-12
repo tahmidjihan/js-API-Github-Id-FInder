@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  padding: 0%;
+  margin: 0%;
+  font-family: "azret mono", monospace;
+}
+
+body {
+  background-color: #313132;
+  color: #dfdfdf;
+}
+a {
+  color: cyan;
+  text-decoration: none;
+  margin: 0em;
+  padding: 0em;
+}
+/* #username {
+  text-align: center;
+} */
+h2 {
+  margin: 0em;
+  padding: 0em;
+}
+ul li {
+  list-style: none;
+}
+.card {
+  position: relative;
+  height: 540px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.card-img {
+  width: auto;
+  height: 200px;
+  border-radius: 50%;
+  border: 5px solid #212122;
+  position: absolute;
+  top: 30px;
+  z-index: 2;
+}
+.card-container {
+  margin-top: 10px;
+  width: 300px;
+  height: 250px;
+  border-radius: 24px;
+  padding: 15px;
+  padding-top: 70px;
+  background: #505050;
+  position: absolute;
+  bottom: 20px;
+}
+.name {
+  text-align: center;
+}
+.card-list {
+  margin-top: 1em;
+  padding: 20px;
+}
+/* search  */
+.input-username {
+  padding: 14px;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  border: 1px solid aliceblue;
+  background: #212122;
+}
+.input-username::placeholder {
+  color: aliceblue;
+}
+.input-username:focus {
+  outline: none;
+  transition: 1s;
+  background: aliceblue;
+}
+.input-username:focus::placeholder {
+  color: #212122;
+}
+#searchBtn {
+  border-bottom-right-radius: 6px;
+  border-top-right-radius: 6px;
+  padding: 15px;
+  border: none;
+}
+.search {
+  margin: 2em;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}

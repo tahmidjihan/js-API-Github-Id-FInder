@@ -5,12 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Api Call</title>
     <link rel="stylesheet" href="style.css" />
-    <style>
-      body {
-        background-color: #313132;
-        color: #dfdfdf;
-      }
-    </style>
   </head>
   <body>
     <div class="container">
@@ -22,11 +16,28 @@
         <button id="searchBtn">Search</button>
       </form>
       <div class="card">
-        <img src="" alt="" class="card-img" />
+        <img
+          src="https://avatars.githubusercontent.com/u/70837369"
+          alt=""
+          class="card-img" />
         <div class="card-container">
           <div class="name">
-            <h2 id="name"></h2>
-            <a href="" id="username"></a>
+            <h2 id="name">Full Name</h2>
+            <div id="username"><a href="">Username</a></div>
+            <small class="bio">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia,
+              magnam?
+            </small>
+          </div>
+          <div class="IdStatus">
+            <ul class="card-list">
+              <li><b>Followers:</b><span id="info1"></span></li>
+              <li><b>Following:</b><span id="info2"></span></li>
+              <li><b>Location</b><span id="info3"></span></li>
+              <li><b>Id Created:</b><span id="info4"></span></li>
+              <li><b>Twitter:</b><span id="info5"></span></li>
+              <li><b>Blog:</b><span id="info6"></span></li>
+            </ul>
           </div>
         </div>
       </div>
