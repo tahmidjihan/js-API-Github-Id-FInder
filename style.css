@@ -29,16 +29,15 @@ ul li {
 .card {
   position: relative;
   height: 630px;
-  width: 400px;
+  width: 330px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  margin: 0%;
 }
 .card-img {
   width: 200px;
   height: 200px;
   display: flex;
+  margin: 0% 15% 0% 15%;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
@@ -64,6 +63,7 @@ ul li {
 .card-list {
   margin-top: 1em;
   padding: 20px;
+  text-align: start;
 }
 /* search  */
 .input-username {
@@ -100,4 +100,24 @@ ul li {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin: 15%;
+  text-align: center;
+}
+.statusNeg {
+  color: red;
+  padding: 3px;
+}
+.status {
+  color: greenyellow;
+  padding: 3px;
+}
+.status,
+.statusNeg {
+  position: absolute;
+}
+footer {
+  background: #505050;
+  text-align: center;
+  position: absolute;
+  bottom: 0%;
 }

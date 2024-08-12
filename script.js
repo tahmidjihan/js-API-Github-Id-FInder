@@ -1,5 +1,12 @@
+const card = document.querySelector(".card");
+window.addEventListener("load", () => {
+  card.style.display = "none";
+});
+
 const searchBtn = document.getElementById("searchBtn");
 const username = document.querySelector(".input-username");
+const result = document.querySelector(".status");
+const resultNeg = document.querySelector(".statusNeg");
 
 //search
 let usernameVal;
@@ -14,10 +21,13 @@ searchBtn.addEventListener("click", (e) => {
     //   console.log(this.responseText);
     if (xhr.readyState === 4) {
       if (xhr.status === 404) {
-        console.log("user not found");
+        resultNeg.innerHTML = "User Not Found";
+        result.innerHTML = "";
       } else {
+        resultNeg.innerHTML = "";
+        result.innerHTML = "User Found";
+        card.style.display = "block";
         const data = JSON.parse(this.responseText);
-        console.log(data.login);
         processData(data);
       }
     }
@@ -51,3 +61,4 @@ function processData(data) {
   blog.innerHTML = `<a href="${data.blog}">Blog</a>`;
   bio.innerHTML = data.bio;
 }
+// extra
