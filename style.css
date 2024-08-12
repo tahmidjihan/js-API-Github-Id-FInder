@@ -28,7 +28,7 @@ ul li {
 }
 .card {
   position: relative;
-  height: 540px;
+  height: 630px;
   width: 400px;
   display: flex;
   flex-direction: column;
@@ -36,8 +36,11 @@ ul li {
   justify-content: center;
 }
 .card-img {
-  width: auto;
+  width: 200px;
   height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 50%;
   border: 5px solid #212122;
   position: absolute;
@@ -47,7 +50,7 @@ ul li {
 .card-container {
   margin-top: 10px;
   width: 300px;
-  height: 250px;
+  height: 340px;
   border-radius: 24px;
   padding: 15px;
   padding-top: 70px;
@@ -69,6 +72,7 @@ ul li {
   border-bottom-left-radius: 6px;
   border: 1px solid aliceblue;
   background: #212122;
+  color: aliceblue;
 }
 .input-username::placeholder {
   color: aliceblue;
@@ -77,6 +81,7 @@ ul li {
   outline: none;
   transition: 1s;
   background: aliceblue;
+  color: #212122;
 }
 .input-username:focus::placeholder {
   color: #212122;
