@@ -118,6 +118,5 @@ ul li {
 footer {
   background: #505050;
   text-align: center;
-  position: absolute;
-  bottom: 0%;
+  position: bottom left;
 }
